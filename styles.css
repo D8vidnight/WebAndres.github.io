@@ -600,3 +600,143 @@ footer {
     margin-top: 30px;
     border-radius: 20px;
 }
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 70vh;
+    background-color: var(--dark-grey);
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero-text p {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero-image img {
+    max-width: 30rem;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 25px;
+    background-color: yellow;
+    color: var(--dark-grey);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.resume-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        max-width: 25rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resume-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Estilos para tablets (entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        max-width: 18rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    .skills-container,
+    .resume-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para móviles (por si decides agregar a futuro) */
+@media (max-width: 767px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 15rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .skills-container,
+    .resume-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustes globales */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.container,
+section,
+article {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
